@@ -1,24 +1,37 @@
 <?php
-$a = 100;
-$b = 100;
-
-$c = "100ss";
-$d = "100ss";
 
 
-echo $a + $b;
+    for($i = 0; $i <= 100; $i++)
+    {
+        $tablica_liczb[$i] = true;
+    }
 
-echo "<br><br>";
+   $j = 2;
 
-echo $c . $d;
+    for($i = 2; $i<=Sqrt($n);$i++)
+    {
+        if ($tablica_liczb[$i] == true)
+        {
+            for($j = $i*$i; $j<=$n;$j=$j+$i)
+            {
+                $tablica_liczb[$j] = false;
+            }
+        }
+
+    }
+
+    
 
 
 
-echo "To jest integer: " . $a . ", a to jest string b: $b <br> ";
-echo "To jest $a <br><br><br>";
+        for ($i = 2; $i <=100; $i++)
+        {
+            if ($tablica_liczb[$i] == true)
+            {
+                echo $i. " ";
+            }
+        }
 
-echo "A jest typu :".  gettype($a) . "<br>";
-echo "B jest typu :" . gettype($b);
 
 
 
